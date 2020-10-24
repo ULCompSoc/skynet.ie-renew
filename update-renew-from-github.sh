@@ -7,6 +7,9 @@
 # ensure we are in the correct directory
 cd /var/www/renew
 
+# check the repo is available
+git ls-remote http://github.com/ULCompSoc/skynet.ie-renew.git -q || { echo 'Repo not available' ; exit 1; }
+
 # delete all files in directory except for this script
 ls | grep -v update-renew-from-github.sh | xargs rm -rf --
 
