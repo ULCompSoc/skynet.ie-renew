@@ -5,7 +5,7 @@
 # cwalsh 2020-10-10
 
 # ensure we are in the correct directory
-cd /var/www/renew
+cd /var/www/html/renew
 
 # check the repo is available
 git ls-remote http://github.com/ULCompSoc/skynet.ie-renew.git -q || { echo 'Repo not available' ; exit 1; }
